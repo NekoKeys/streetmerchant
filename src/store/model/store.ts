@@ -42,6 +42,7 @@ export type Series =
   | '3060'
   | '3060ti'
   | '3070'
+  | '3070ti'
   | '3080'
   | '3090'
   | 'darkhero'
