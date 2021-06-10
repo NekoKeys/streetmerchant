@@ -19,10 +19,12 @@ import {sendTwitchMessage} from './twitch';
 import {updateRedis} from './redis';
 import {sendStreamLabsAlert} from './streamlabs';
 import {sendFreeMobileAlert} from './freemobile';
+import {sendRestPutNotification} from './rest';
 import {DMPayload} from '.';
 
 export function sendNotification(link: Link, store: Store) {
   // Priority
+  sendRestPutNotification(link, store);
   playSound();
   sendDiscordMessage(link, store);
   sendDesktopNotification(link, store);

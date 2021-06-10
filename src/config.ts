@@ -329,6 +329,10 @@ const notifications = {
   redis: {
     url: envOrString(process.env.REDIS_URL),
   },
+  rest: {
+    endpoint: envOrString(process.env.REST_ENDPOINT),
+    port: envOrString(process.env.REST_PORT),
+  },
   slack: {
     channel: envOrString(process.env.SLACK_CHANNEL),
     token: envOrString(process.env.SLACK_TOKEN),
