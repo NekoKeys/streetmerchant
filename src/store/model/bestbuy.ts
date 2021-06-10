@@ -27,6 +27,13 @@ export const BestBuy: Store = {
       url: 'https://api.bestbuy.com/click/-/6429442/pdp',
     },
     {
+      brand: 'nvidia',
+      cartUrl: 'https://api.bestbuy.com/click/-/6465789/cart',
+      model: 'founders edition',
+      series: '3070ti',
+      url: 'https://api.bestbuy.com/click/-/6465789/pdp',
+    },
+    {
       brand: 'evga',
       cartUrl: 'https://api.bestbuy.com/click/-/6439300/cart',
       model: 'xc3 black',
